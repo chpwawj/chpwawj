@@ -18,7 +18,7 @@ public class Server {
     public void gotos()
     {
         try {
-            ServerSocket server = new ServerSocket(12345);//端口
+            ServerSocket server = new ServerSocket(1244);//端口
             Socket clientSocket = server.accept();//监听请求
             writer = new PrintWriter(clientSocket.getOutputStream());
 // 1)向客户端发送"Verifying Server!"
